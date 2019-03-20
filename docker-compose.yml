@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  db: 
+    image: mongo
+    # restart: always
+
+  afa:
+    build: afa
+   # command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - ./afa:/myapp:rw
+    ports:
+      - "3002:3000"
+    
+    depends_on: 
+      - db
+#    environment:
+#      - http_proxy=http://proxysscc.svb.lacaixa.es:8080
+#      - https_proxy=http://proxysscc.svb.lacaixa.es:8080

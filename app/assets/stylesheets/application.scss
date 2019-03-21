@@ -12,3 +12,68 @@
  *
  */
  @import "bootstrap";
+
+ @import url('https://fonts.googleapis.com/css?family=Arizonia|Niconne|Parisienne');
+html {
+    font-size: 25px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+.container {
+    max-width: 960px;
+    font-family: 'Parisienne', 'Arizonia', cursive;
+    font-size: 25px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+._1active {
+    fill: mediumseagreen;
+
+}
+text._1active {
+    fill: black;
+    font: bold;
+    font-size: 35px;
+}
+
+._2pendent {
+    fill: moccasin;
+
+}
+text._2pendent {
+    fill: darkgrey;
+    font: bold;
+    font-size: 35px;
+}
+
+._4removed {
+    fill:lightgray;
+
+}
+text._4removed {
+    fill: red;
+    font: bold;
+    font-size: 35px;
+}
+
+._3expired {
+    fill:lightcoral;
+
+}
+text._3expired {
+    fill: black;
+    font: bold;
+    font-size: 35px;
+}
+

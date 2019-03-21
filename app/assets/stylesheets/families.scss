@@ -1,3 +1,54 @@
 // Place all the styles related to the Families controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Arizonia|Niconne|Parisienne');
+html {
+    font-size: 20px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+.container {
+    max-width: 960px;
+    font-family: 'Arizonia', cursive;
+    font-size: 20px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+.active {
+    fill: mediumseagreen;
+
+}
+text.active {
+    fill: black;
+    font: bold;
+}
+
+.pendent {
+    fill: moccasin;
+
+}
+text.pendent {
+    fill: darkgrey;
+    font: bold;
+}
+
+.removed {
+    fill:lightgray;
+
+}
+text.removed {
+    fill: red;
+    font: bold;
+}
